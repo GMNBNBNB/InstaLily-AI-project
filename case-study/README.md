@@ -27,7 +27,7 @@ A sophisticated AI-powered chat agent for the PartSelect e-commerce platform, sp
 
 ### Backend (Node.js + Express)
 - **Framework**: Express.js REST API
-- **AI Integration**: Google Gemini Pro via Google Generative AI API
+- **AI Integration**: Google Gemini api
 - **Data Storage**: In-memory JavaScript objects (easily extensible to database)
 - **Core Components**:
   - Product search and filtering
@@ -96,8 +96,14 @@ npm install
 4. **Configure Environment Variables**
 ```bash
 cd backend
-cp .env
-# Edit .env and add your Google API key
+```
+
+Create a `.env` file in the `backend` directory:
+
+```env
+GOOGLE_API_KEY=your-google-api-key-here
+PORT=5000
+NODE_ENV=development
 ```
 
 5. **Start the Backend Server**
@@ -114,15 +120,6 @@ npm start
 # React app will open at http://localhost:3000
 ```
 
-### Configuration
-
-Create a `.env` file in the `backend` directory:
-
-```env
-GOOGLE_API_KEY=your-google-api-key-here
-PORT=5000
-NODE_ENV=development
-```
 ## API Documentation
 
 ### Endpoints
