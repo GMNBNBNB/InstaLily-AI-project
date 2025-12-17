@@ -2,16 +2,7 @@
 
 A sophisticated AI-powered chat agent for the PartSelect e-commerce platform, specializing in refrigerator and dishwasher parts. This solution provides intelligent product recommendations, compatibility checking, installation guidance, and troubleshooting support.
 
-## 🎯 Project Overview
-
-### Key Features
-
-- **🤖 Intelligent Product Search**: Natural language queries for finding parts by name, part number, or description
-- **✅ Compatibility Checking**: Verify part compatibility with specific appliance models
-- **📋 Installation Guidance**: Step-by-step installation instructions and difficulty ratings
-- **🔧 Troubleshooting Support**: Diagnostic help for common appliance issues
-- **💳 Product Recommendations**: Smart suggestions with detailed specifications and pricing
-- **🎨 Modern UI**: Clean, responsive interface with PartSelect branding
+## Project Overview
 
 ### Example Queries Supported
 
@@ -21,7 +12,7 @@ A sophisticated AI-powered chat agent for the PartSelect e-commerce platform, sp
 - "Show me water filters for refrigerators"
 - "I need a heating element for my dishwasher"
 
-## 🏗️ Architecture
+## Architecture
 
 ### Frontend (React)
 - **Framework**: React 18 with modern hooks
@@ -77,7 +68,7 @@ A sophisticated AI-powered chat agent for the PartSelect e-commerce platform, sp
 }
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -105,7 +96,7 @@ npm install
 4. **Configure Environment Variables**
 ```bash
 cd backend
-cp .env.example .env
+cp .env
 # Edit .env and add your Google API key
 ```
 
@@ -132,14 +123,7 @@ GOOGLE_API_KEY=your-google-api-key-here
 PORT=5000
 NODE_ENV=development
 ```
-
-To get your Google API key:
-1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Sign in with your Google account
-3. Click "Create API Key"
-4. Copy the key and paste it into your `.env` file
-
-## 📚 API Documentation
+## API Documentation
 
 ### Endpoints
 
@@ -184,7 +168,7 @@ Check part compatibility with a model.
 }
 ```
 
-## 🎨 Design Decisions
+## Design Decisions
 
 ### User Experience
 - **Conversational Interface**: Natural language interactions reduce friction
@@ -205,7 +189,7 @@ Check part compatibility with a model.
 - **API-First Design**: Backend can support multiple frontends
 - **Component Reusability**: React components are self-contained and reusable
 
-## 🔧 Scalability Considerations
+## Scalability Considerations
 
 ### Current Implementation
 - In-memory data storage (15+ products, compatibility data, troubleshooting guides)
@@ -236,7 +220,7 @@ Check part compatibility with a model.
    - Multi-language support
    - Image upload for visual part identification
 
-## 📊 Success Metrics
+## Success Metrics
 
 ### Implemented Features
 ✅ Natural language product search  
@@ -255,7 +239,7 @@ Check part compatibility with a model.
 - **Accuracy**: Structured data ensures correct product information
 - **Efficiency**: Fast responses with optimized API calls
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 - React 18
@@ -274,7 +258,7 @@ Check part compatibility with a model.
 - Nodemon (hot reload)
 - ESLint
 
-## 📝 Future Enhancements
+## Future Enhancements
 
 1. **Enhanced Product Discovery**
    - Visual part identification via image upload
@@ -297,23 +281,6 @@ Check part compatibility with a model.
    - Order tracking within chat
    - Warranty claim assistance
 
-## 👨‍💻 Development
-
-### Running Tests
-```bash
-npm test
-```
-
-### Building for Production
-```bash
-# Frontend
-npm run build
-
-# Backend
-cd backend
-npm start
-```
-
 ### Project Structure
 ```
 case-study/
@@ -335,31 +302,3 @@ case-study/
 ├── public/               # Static assets
 └── README.md            # This file
 ```
-
-## 📄 License
-
-This project is created as a case study demonstration.
-
-## 🤝 Contributing
-
-This is a case study project, but suggestions and improvements are welcome!
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
